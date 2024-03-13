@@ -1,0 +1,21 @@
+**push 
+docker images
+docker tag ca2b0f26964c abhishekkl/abhi shek: latest
+docker login
+docker push abhishekkl/abhi_shek:latest
+
+**creating image using Dockerfile
+dockerfile:
+
+install docker and YAML extension in vscode
+create a folder 
+open the folder in vscode
+create file named "Dockerfile"
+inside that put:
+
+FROM ubuntu
+MAINTAINER Abhishek <abhi@gmail.com>
+run apt-get update
+CMD ["echo", "Hello World"]
+
+execute docker build -t ubunt .
